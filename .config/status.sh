@@ -10,20 +10,20 @@ while true; do
         wifi_state=$(echo "$wifi_info" | cut -d\  -f2)
 
         if [ "$wifi_state" = "(connected)" ]; then
-            wifi_status=" "
+            wifi_status="  "
         fi
     fi
-    date_str=" $(date '+%d,%b - %H:%M')"
-    battery=$(upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep -E "percentage" | awk '{print $2}')
+    date_str="  $(date '+%d,%b - %H:%M')"
+    battery="󰁾 $(upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep -E "percentage" | awk '{print $2}')"
     volume=$(pamixer --get-volume-human)
 
-    volume_str=" $volume"
+    volume_str=" $volume "
     if [ "$volume" = "$volume_ref" ]; then
       volume_str=""
     fi
 
     volume_ref="$volume"
 
-    echo "$wifi_status$volume_str 󰁾 $battery  $date_str"
+    echo "$wifi_status $volume_str $battery $date_str"
     sleep 1  # Adjust the refresh rate as needed
 done

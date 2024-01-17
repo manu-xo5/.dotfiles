@@ -219,7 +219,7 @@ bar {
 
     status_command ~/.config/status.sh
 
-    font pango:ubuntu 12
+    font pango:UbuntuMono Nerd Font 12
 
     colors {
         statusline #e7e7e7
