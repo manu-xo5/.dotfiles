@@ -1,0 +1,3 @@
+#!/bin/bash
+
+ls -d /home/norm/code/* | rofi -dmenu | sed 's/\(.*\)/--working-directory=\1 tmux/' | xargs footclient
