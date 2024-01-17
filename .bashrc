@@ -16,6 +16,7 @@ alias gs="git status"
 alias ga="git add -A"
 alias gc="git commit -m"
 alias gp="git push"
+alias d='/usr/bin/git --git-dir=$HOME/code/.dotfiles.git/ --work-tree=$HOME'
 
 PS1='[\u@\h \W]\$ '
 
@@ -34,5 +35,4 @@ case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
-alias dots='/usr/bin/git --git-dir=$HOME/code/.dotfiles.git/ --work-tree=$HOME'
 # pnpm end
