@@ -7,7 +7,6 @@
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 
 exec /usr/bin/foot --server
-exec emacs --daemon
 ### Variables
 #
 # Logo key. Use Mod1 for Alt.
@@ -76,6 +75,7 @@ default_border none
 
     # Start your launcher
     bindsym $mod+p exec rofi -show combi
+    bindsym $mod+c exec code
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
