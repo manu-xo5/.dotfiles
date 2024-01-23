@@ -5,7 +5,7 @@ plug "zap-zsh/supercharge"
 plug "zsh-users/zsh-syntax-highlighting"
 plug "esc/conda-zsh-completion"
 
-alias ll='ls --color=auto -lah'
+alias ll='ls --color=auto -1'
 alias grep='grep --color=auto'
 alias rm='rm -f'
 alias pr="pnpm run"
