@@ -37,6 +37,7 @@ keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 
 -- Clear highlights
 keymap("n", "<leader>h", vim.cmd.nohlsearch, opts)
+keymap("n", "<leader>z", ":Telescope buffers<CR>", opts)
 
 -- Netrw
 vim.keymap.set("n", "<leader>.", vim.cmd.Ex, { silent = true, noremap = true })
@@ -48,3 +49,8 @@ keymap("x", ">", ">gv", opts)
 
 ---- emacs ----
 keymap("i", "<C-c>", "<Nop>", { noremap = true, silent = true, nowait = true })
+
+---- terminal ----
+keymap("t", "<Esc>", "<c-\\><c-n>")
+keymap("n", "<leader>tt", ":tab sb term<CR>")
+keymap("n", "<leader>tv", ":vs<CR>:b term<CR>")
