@@ -1,9 +1,8 @@
 #!/bin/sh
 
-selected=$(find /home/norm/code /home/norm/.config -mindepth 1 -maxdepth 1 | rofi -dmenu)
+selected=$(find /home/norm/code /home/norm/.config -mindepth 1 -maxdepth 1 | fzf)
 
 [ "$selected" = "" ] && exit 0;
 
-selected_name="$(basename "$selected" | tr . _)"
-tmux new-session -s "$selected_name" -c "$selected" -d
-footclient tmux attach-session -t "$selected_name"
+eval "cd $selected"
+$SHELL
