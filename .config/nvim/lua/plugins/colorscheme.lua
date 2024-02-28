@@ -16,14 +16,22 @@
 --   end
 -- }
 
+-- return {
+-- 	"ramojus/mellifluous.nvim",
+-- 	config = function()
+-- 		require("mellifluous").setup({
+-- 			dim_inactive = false,
+-- 			color_set = "mountain",
+-- 		})
+-- 		vim.cmd("colorscheme mellifluous")
+-- 	end,
+-- }
+
 return {
-	"ramojus/mellifluous.nvim",
+	"briones-gabriel/darcula-solid.nvim",
+	dependencies = "rktjmp/lush.nvim",
 	config = function()
-		require("mellifluous").setup({
-			dim_inactive = false,
-			color_set = "mountain",
-		})
-		vim.cmd("colorscheme mellifluous")
+		vim.cmd("colorscheme darcula-solid")
 	end,
 }
 

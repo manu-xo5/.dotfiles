@@ -4,4 +4,4 @@ selected=$(find /home/norm/code /home/norm/.config -mindepth 1 -maxdepth 1 | fzf
 
 [ "$selected" = "" ] && exit 0;
 
-nvim -c "cd $selected" -c "term" -c "tabnew" -c "tabfirst | startinsert"
+nvim -c "cd $selected"
