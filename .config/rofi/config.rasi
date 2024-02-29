@@ -60,6 +60,7 @@ configuration {
 #element {
     border:  0;
     padding: 3px ;
+    border-radius: 5px;
 }
 #element.normal.normal {
     background-color: @background-color;
@@ -114,7 +115,7 @@ configuration {
 #inputbar {
     spacing:    0;
     text-color: @foreground;
-    padding:    1px ;
+    padding:    0px 1px 10px;
 }
 #case-indicator {
     spacing:    0;
@@ -133,7 +134,7 @@ configuration {
 }
 #textbox-prompt-colon {
     expand:     false;
-    str:        ">";
+    str:        "";
     margin:     0px 0.3em 0em 0em ;
     text-color: @foreground;
 }

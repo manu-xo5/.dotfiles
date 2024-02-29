@@ -25,7 +25,7 @@ set $term footclient
 ### Output configuration
 #
 # Wallpaper Background
-output * bg /home/norm/pictures/wall2.jpg fill
+output * bg /home/norm/pictures/wall4.png fill
 #
 # Example configuration:
 #
