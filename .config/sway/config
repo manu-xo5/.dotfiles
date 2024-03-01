@@ -222,18 +222,7 @@ bindsym XF86MonBrightnessUp exec brightnessctl set 5%+
 # Read `man 5 sway-bar` for more information about this section.
 ### Status Bar ###
 bar {
-    position top
-
-    status_command ~/.config/status.sh
-
-    font pango:UbuntuMono Nerd Font 12
-
-    colors {
-        statusline #e7e7e7
-        background #262626
-        inactive_workspace #262626 #262626 #4c4c4c
-        focused_workspace #0f0f0f #0f0f0f #e7e7e7
-    }
+    swaybar_command waybar
 }
 
 include /etc/sway/config.d/*
