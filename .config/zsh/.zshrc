@@ -8,11 +8,21 @@ plug "esc/conda-zsh-completion"
 alias ll='ls --color=auto -1'
 alias grep='grep --color=auto'
 alias rm='rm -f'
-alias pr="pnpm run"
+
 alias gs="git status"
 alias ga="git add -A"
 alias gc="git commit -m"
-alias gp="git push"
+alias gph="git push"
+function gpl() {
+  if [ -n "$1" ]; then
+    git pull origin "$1" --rebase
+  else
+    git pull --rebase
+  fi
+}
+
+export GIT_CONFIG_GLOBAL=$HOME/.config/git/.gitconfig
+
 alias d='/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME'
 
 eval "$(starship init zsh)"
