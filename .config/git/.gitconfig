@@ -1,0 +1,13 @@
+[core]
+	editor = nvim
+[user]
+	email = mohit.matwaya@gmail.com
+	name = manu-xo5
+[credential "https://github.com"]
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = !/usr/bin/gh auth git-credential
+[init]
+  defaultlBranch = "main"
+[push]
+  autoSetupRemote = "true"
