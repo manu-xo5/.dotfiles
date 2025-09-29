@@ -1,0 +1,7 @@
+font-family = "JetBrainsMono Nerd Font"
+font-size = 13
+theme = "Builtin Solarized Dark"
+background-opacity = 0.8
+background-blur = true
+maximize = true
+macos-titlebar-style = "hidden"
