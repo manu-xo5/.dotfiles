@@ -1,7 +1,16 @@
 font-family = "JetBrainsMono Nerd Font"
-font-size = 13
-theme = "Builtin Solarized Dark"
-background-opacity = 0.8
-background-blur = true
+font-size = 18
+
+theme = Catppuccin Macchiato
+window-decoration = none
+macos-window-shadow = false
 maximize = true
-macos-titlebar-style = "hidden"
+
+background = "#181818"
+background-blur = 25
+background-opacity = 0.8
+keybind=shift+enter=text:\x1b\r
+
+cursor-style = block
+cursor-style-blink = false
+shell-integration-features = no-cursor
