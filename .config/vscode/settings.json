@@ -1,0 +1,136 @@
+{
+  "chat.agent.enabled": false,
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
+  "editor.cursorBlinking": "solid",
+  "editor.fontFamily": "JetBrainsMono Nerd Font, Menlo, Monaco, 'Courier New', monospace",
+  "zenMode.fullScreen": false,
+  "editor.stickyScroll.enabled": false,
+  "breadcrumbs.enabled": false,
+  "zenMode.hideStatusBar": false,
+  "zenMode.hideLineNumbers": false,
+  "editor.guides.indentation": false,
+  "editor.occurrencesHighlight": "off",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.hlsearch": true,
+  "vim.leader": "<space>",
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["k", "j"],
+      "after": ["<Esc>"]
+    },
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    }
+  ],
+
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<Esc>"],
+      "after": ["<Esc>", ":", "n", "o", "h", "<cr>"],
+      "silent": true
+    },
+    {
+      "before": ["<leader>", "f", "f"],
+      "commands": ["workbench.action.quickOpen"],
+      "silent": true
+    },
+    {
+      "before": ["<leader>", "l", "f"],
+      "commands": ["editor.action.formatDocument"],
+      "silent": true
+    },
+    {
+      "before": ["[", "d"],
+      "commands": ["editor.action.marker.prevInFiles"]
+    },
+    {
+      "before": ["]", "d"],
+      "commands": ["editor.action.marker.nextInFiles"]
+    },
+
+    {
+      "before": ["g", "r", "n"],
+      "commands": ["editor.action.rename"],
+      "silent": true
+    },
+    {
+      "before": ["g", "r", "a"],
+      "commands": ["editor.action.quickFix"],
+      "silent": true
+    },
+    {
+      "before": ["g", "r", "r"],
+      "commands": ["editor.action.goToReferences"],
+      "silent": true
+    },
+    {
+      "before": ["K"],
+      "commands": ["editor.action.showHover"],
+      "silent": true
+    },
+    {
+      "before": ["<c-h>"],
+      "after": ["<c-w>", "h"],
+      "silent": true
+    },
+    {
+      "before": ["<c-j>"],
+      "after": ["<c-w>", "j"],
+      "silent": true
+    },
+    {
+      "before": ["<c-k>"],
+      "after": ["<c-w>", "k"],
+      "silent": true
+    },
+    {
+      "before": ["<c-l>"],
+      "after": ["<c-w>", "l"],
+      "silent": true
+    }
+  ],
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false
+  },
+
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  },
+  "editor.bracketPairColorization.enabled": false,
+  "editor.matchBrackets": "never",
+  "workbench.editor.enablePreview": false,
+  "workbench.navigationControl.enabled": false,
+  "workbench.layoutControl.enabled": false,
+  "window.commandCenter": false,
+  "chat.commandCenter.enabled": false,
+  "workbench.tree.indent": 12,
+  "workbench.startupEditor": "none",
+  "window.titleBarStyle": "custom",
+
+  "workbench.iconTheme": "glyph.legacy",
+  "workbench.colorTheme": "Xcode Default (Dark Customized Version)",
+  "workbench.panel.showLabels": false,
+  "editor.cursorSmoothCaretAnimation": "explicit",
+  "workbench.activityBar.location": "hidden",
+  "editor.renderLineHighlight": "none",
+  "editor.fontSize": 13,
+  "vim.foldfix": true,
+  "editor.fontWeight": 300,
+  "claudeCode.preferredLocation": "panel",
+  "claudeCode.useCtrlEnterToSend": true,
+  "claudeCode.useTerminal": true,
+  "json.schemaDownload.trustedDomains": {
+    "https://schemastore.azurewebsites.net/": true,
+    "https://raw.githubusercontent.com/": true,
+    "https://www.schemastore.org/": true,
+    "https://json.schemastore.org/": true,
+    "https://json-schema.org/": true,
+    "https://openapi.vercel.sh": true
+  },
+  "explorer.confirmDragAndDrop": false
+}
